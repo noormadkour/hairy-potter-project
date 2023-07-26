@@ -3,9 +3,9 @@ import { makePottery } from "./makePottery.js";
 import { firePottery } from "./kiln.js";
 
 // Make 5 pieces of pottery at the wheel
-let mug = makePottery("mug", 2, 5);
-let platter = makePottery("platter", 5, 7);
-let tumbler = makePottery("tumbler", 3, 3);
+let mug = makePottery("Mug", 2, 5);
+let platter = makePottery("Platter", 5, 7);
+let tumbler = makePottery("Tumbler", 3, 3);
 let ringHolder = makePottery("Ring Holder", 4, 6);
 let paperweight = makePottery("Paperweight", 8, 4);
 
@@ -20,7 +20,6 @@ console.log(platter);
 console.log(tumbler);
 console.log(ringHolder);
 console.log(paperweight);
-
 
 // Fire each piece of pottery in the kiln
 

@@ -1,8 +1,8 @@
 // Imports go first
-import { makePottery } from "./makePottery.js";
-import { firePottery } from "./kiln.js";
-import { toSellOrNotToSell, usePottery } from "./potteryCatalog.js";
-import { potteryList } from "./potteryList.js";
+import { makePottery } from "./PotteryWheel.js";
+import { firePottery } from "./Kiln.js";
+import { toSellOrNotToSell, usePottery } from "./PotteryCatalog.js";
+import { PotteryList } from "./PotteryList.js";
 
 // Make 5 pieces of pottery at the wheel
 let mug = makePottery("Mug", 7, 5);
@@ -23,9 +23,7 @@ toSellOrNotToSell(tumbler);
 toSellOrNotToSell(ringHolder);
 toSellOrNotToSell(paperweight);
 
-const itemsForSale = usePottery();
-
-const htmlString = potteryList(itemsForSale)
+const htmlString = PotteryList(usePottery())
 
 let parentHtmlElement = document.querySelector(".PotteryList");
 

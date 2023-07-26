@@ -2,6 +2,7 @@
 import { makePottery } from "./makePottery.js";
 import { firePottery } from "./kiln.js";
 import { toSellOrNotToSell, usePottery } from "./potteryCatalog.js";
+import { potteryList } from "./potteryList.js";
 
 // Make 5 pieces of pottery at the wheel
 let mug = makePottery("Mug", 7, 5);
@@ -24,13 +25,19 @@ toSellOrNotToSell(paperweight);
 
 const itemsForSale = usePottery();
 
+const htmlString = potteryList(itemsForSale)
+
+let parentHtmlElement = document.querySelector(".PotteryList");
+
+parentHtmlElement.innerHTML = htmlString;
+
 // console.log(mug);
 // console.log(platter);
 // console.log(tumbler);
 // console.log(ringHolder);
 // console.log(paperweight);
 
-console.log(itemsForSale)
+// console.log(htmlString)
 
 // Fire each piece of pottery in the kiln
 

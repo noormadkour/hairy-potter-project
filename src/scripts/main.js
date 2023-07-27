@@ -23,7 +23,7 @@ toSellOrNotToSell(tumbler);
 toSellOrNotToSell(ringHolder);
 toSellOrNotToSell(paperweight);
 
-const htmlString = PotteryList(usePottery())
+const htmlString = PotteryList()
 
 let parentHtmlElement = document.querySelector(".PotteryList");
 
